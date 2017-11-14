@@ -7,8 +7,8 @@
  */
 
 namespace tests;
-require_once './premier/Calculator.php';
-require_once './premier/Account.php';
+require_once './first/Calculator.php';
+require_once './first/Account.php';
 
 /**
  * Description of AccountTest
@@ -42,6 +42,6 @@ class AccountTest extends \PHPUnit\Framework\TestCase {
     
     public function testGetSalary() {
         $result = $this->instance->getSalary(1000);
-        $this->assertEquals($result, 5);
+        $this->assertEquals($result, 995);
     }
 }
