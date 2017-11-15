@@ -28,4 +28,14 @@ class User {
   function getId() {
       return $this->id;
   }
+  
+  function getMail() {
+      return $this->mail;
+  }
+  
+  function getPass() {
+      return $this->pass;
+  }
+  
+  
 }
