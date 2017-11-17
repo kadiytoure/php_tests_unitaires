@@ -9,7 +9,7 @@
 namespace tests;
 
 use PHPUnit\Framework\TestCase;
-use premier\Calculator;
+use first\Calculator;
 /**
  * Description of CalculatorTest
  *

@@ -10,12 +10,16 @@ namespace tests;
 require_once './first/Calculator.php';
 require_once './first/Account.php';
 
+use PHPUnit\Framework\TestCase;
+use first\Account;
+use first\Calculator;
+
 /**
  * Description of AccountTest
  *
  * @author toure
  */
-class AccountTest extends \PHPUnit\Framework\TestCase {
+class AccountTest extends TestCase {
     //put your code here
     private $instance;
     
@@ -27,6 +31,7 @@ class AccountTest extends \PHPUnit\Framework\TestCase {
         
         $mock = $this->getMockBuilder(Calculator::class)
                      ->getMock();
+        
         $mock->expects($this->once())
                ->method('multiply')
                ->with(1000,0.25)

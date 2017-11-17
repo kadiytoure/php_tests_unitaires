@@ -37,5 +37,15 @@ class User {
       return $this->pass;
   }
   
+  function setId($id) {
+      $this->id = $id;
+  }
   
+  function setMail($mail) {
+      $this->mail = $mail;
+  }
+  
+  function setPass($pass) {
+      $this->pass = $pass;
+  }
 }

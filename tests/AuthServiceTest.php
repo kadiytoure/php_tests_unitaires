@@ -28,6 +28,11 @@ class AuthServiceTest extends TestCase {
     private $instance;
     private $mock;
     
+    protected function setUp(){
+        $this->mock = $this->createMock(IDaoUser::class);
+        $this->instance = new AuthService($this->mock);
+    }
+    
     protected function testSignupSuccess(){
         $argMail = 'test@test.test';
         $argPass = 'pass';
